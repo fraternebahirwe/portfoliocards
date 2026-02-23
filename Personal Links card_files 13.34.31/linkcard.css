@@ -1,0 +1,46 @@
+h1 img{
+  height: 100px; 
+  width: 100px;
+  border-radius: 100%;
+  border: 1px solid rgba(237, 214, 6, 0);
+  padding: 3px;
+}
+body {
+  background-color: black;
+  color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+.card {
+  background-color: rgb(39, 38, 38);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 300px;
+  height: 480px;;
+}
+
+.avatar {
+    height: 100px;
+  width: 88px;
+  border-radius: 50%;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-around;
+}
+.links a{
+    display: block;
+    background-color: #333333;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: antiquewhite;
+}
+.location{
+    color: rgb(139, 109, 0);
+}

@@ -1,0 +1,42 @@
+h1{
+  background: green;
+  text-align: center;
+}
+
+body{
+  font-family:serif;
+  padding: 30px;
+}
+
+.header{
+    border-bottom: 1px solid black;
+}
+
+.html{
+  border: 1px solid #ccc;
+  width: 200px;
+  text-align: left;
+  padding:10px;
+  background-color: white;
+  transition:all 0.5s ease ; /* le temps que le card prend pour zoomer*/
+ 
+}
+
+.html:hover{
+  transform: scale(1.07); /* le volume que le card prend au zoom */
+  box-shadow: 0px 8px 5px #74b57a;
+}
+
+.html img{
+ width: 100%;
+}
+
+.portfolio{
+  display: flex;
+  gap:10px;
+}
+
+ .p-color {
+    color:rgb(133, 131, 197);
+}
+
