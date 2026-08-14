@@ -1,47 +1,75 @@
-h1{
-  background: green;
-  text-align: center;
-}
-
-body{
-  font-family:serif;
+body {
+  font-family: system-ui, -apple-system, sans-serif; /* Clean modern font fallback */
   padding: 30px;
   background-color: rgb(155, 209, 178);
-
 }
-h2{
+
+h1 {
+  background: green;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+h2 {
   color: #0d3d11;
 }
 
-.header{
-    border-bottom: 1px solid black;
+.header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
-.html{
-  border: 1px solid #ccc;
-  width: 200px;
-  text-align: left;
-  padding:10px;
-  background-color: rgb(68, 131, 94);
-  transition:all 0.5s ease ; /* le temps que le card prend pour zoomer*/
- 
-}
-
-.html:hover{
-  transform: scale(1.07); /* le volume que le card prend au zoom */
-  box-shadow: 0px 8px 5px #74b57a;
-}
-
-.html img{
- width: 100%;
-}
-
-.portfolio{
+/* Container */
+.portfolio {
   display: flex;
-  gap:10px;
+  flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+  gap: 20px;
 }
 
- .p-color {
-    color:rgba(158, 207, 213, 0.534);
+/* Refactored Card (.html -> .card) */
+.card {
+  flex: 1 1 220px; /* Responsive size instead of hardcoded width */
+  max-width: 280px;
+  background-color: rgb(68, 131, 94);
+  border-radius: 12px;
+  overflow: hidden; /* Ensures image stays inside rounded corners */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card:hover {
+  transform: translateY(-6px); /* Smooth subtle lift instead of scale */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-image-wrapper {
+  margin: 0;
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Prevents image stretching */
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  margin: 0 0 8px 0;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.card-description {
+  margin: 0;
+  color: #e0f2f1; /* High contrast text for readability */
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
