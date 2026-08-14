@@ -6,6 +6,11 @@ h1{
 body{
   font-family:serif;
   padding: 30px;
+  background-color: rgb(155, 209, 178);
+
+}
+h2{
+  color: #0d3d11;
 }
 
 .header{
@@ -17,7 +22,7 @@ body{
   width: 200px;
   text-align: left;
   padding:10px;
-  background-color: white;
+  background-color: rgb(68, 131, 94);
   transition:all 0.5s ease ; /* le temps que le card prend pour zoomer*/
  
 }
@@ -37,6 +42,6 @@ body{
 }
 
  .p-color {
-    color:rgb(133, 131, 197);
+    color:rgba(158, 207, 213, 0.534);
 }
 
